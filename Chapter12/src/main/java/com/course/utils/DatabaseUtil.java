@@ -7,7 +7,10 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.Reader;
-
+/**
+ * 获取可以执行sql的对象session
+ *
+ * */
 public class DatabaseUtil {
 
     public static SqlSession getSqlSession() throws IOException {

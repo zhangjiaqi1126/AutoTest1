@@ -31,10 +31,13 @@ public class LoginTest {
 
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
     public void loginTrue() throws IOException {
-
+        //将工具类中的DatabaseUtil中定义的获取执行sql的方法赋值给SqlSession对象
         SqlSession session = DatabaseUtil.getSqlSession();
+        //执行sql
         LoginCase loginCase = session.selectOne("loginCase",1);
+        //返回获取的数据库的数据
         System.out.println(loginCase.toString());
+        //返回最终的url
         System.out.println(TestConfig.loginUrl);
 
     }

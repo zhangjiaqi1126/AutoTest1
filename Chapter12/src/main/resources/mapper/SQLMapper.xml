@@ -10,5 +10,26 @@
         select * from loginCase
         where id = #{id};
     </select>
+    <!--添加用户接口case-->
+    <select id="addUserCase" parameterType="Integer" resultType="com.course.model.AddUserCase">
+        select * from addUserCase where id=#{id};
+    </select>
+
+    <!--获取用户信息case-->
+    <select id="getUserInfoCase" parameterType="Integer" resultType="com.course.model.GetUserInfoCase">
+        <!-- SQL语句 -->
+        select * from getUserInfoCase where id=#{id};
+    </select>
+
+    <!--获取用户列表case-->
+    <select id="getUserListCase" parameterType="Integer" resultType="com.course.model.GetUserListCase">
+        <!-- SQL语句 -->
+        select * from getUserListCase where id=#{id};
+    </select>
+
+    <!--更新/删除用户信息case-->
+    <select id="updateUserInfoCase" parameterType="Integer" resultType="com.course.model.UpdateUserInfoCase">
+        select * from updateUserInfoCase where id = #{id};
+    </select>
 
 </mapper>

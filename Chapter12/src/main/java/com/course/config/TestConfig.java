@@ -4,7 +4,9 @@ import lombok.Data;
 import org.apache.http.client.CookieStore;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-
+/**
+ * 定义一些变量，与application配置文件中的一一对应
+ * */
 @Data
 public class TestConfig {
 
